@@ -256,6 +256,9 @@ if PsyProjectExternalLib( "sdl", "C++" ) then
 			"$(DXSDK_DIR)/Include",
 			"dxhack",
 		}
+		defines {
+			"__FLTUSED__"
+		}
 		links {
 			"winmm",
 			"imm32",
