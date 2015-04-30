@@ -259,6 +259,9 @@ if PsyProjectExternalLib( "sdl", "C++" ) then
 		defines {
 			"__FLTUSED__"
 		}
+		table.insert(additionalOtherLibraries, "winmm" )
+		table.insert(additionalOtherLibraries, "imm32" )
+		table.insert(additionalOtherLibraries, "version" )
 		links {
 			"winmm",
 			"imm32",
